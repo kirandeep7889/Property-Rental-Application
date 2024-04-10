@@ -1,4 +1,3 @@
-const validateLoginInput = require("./ValidateLoginInput");
 
 const validateRegisterInput = (req, res, next) => {
     const { username, password, email, role, name, phone_number } = req.body;
@@ -37,5 +36,5 @@ const validateRegisterInput = (req, res, next) => {
    next();
   };
   
-  module.exports = validateLoginInput;
+  module.exports = validateRegisterInput;
   
