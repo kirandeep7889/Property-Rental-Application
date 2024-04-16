@@ -11,6 +11,10 @@ const propertySchema = new mongoose.Schema({
     description: { type: String,
          required: true
          },
+    beds: {
+     type:Number,
+     default:5
+    },     
     price: { type: Number,
          required: true
          },
